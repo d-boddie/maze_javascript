@@ -1,5 +1,6 @@
 //worked with a study group that consisted of Elisia Burt, T.L. Williams, Steve Carrington & Mai Nguyen
 //assistance from Chris Jones outside of Kenzie on how to have the block stop at every wall
+//initial createMaze function given by Randy Cox 
 
 
 

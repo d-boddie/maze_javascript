@@ -11,11 +11,12 @@ body {
 }
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    text-align: center;
 }
 
 h3 {
     color: limegreen;
+    text-align: center;
     
 }
 #maze {
@@ -24,6 +25,7 @@ h3 {
     height: 500px;
     background-color: lavender;
     width: 500px;
+    margin: 0 auto;
     
     
 }
