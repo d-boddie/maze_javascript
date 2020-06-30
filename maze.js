@@ -1,3 +1,8 @@
+//worked with a study group that consisted of Elisia Burt, T.L. Williams, Steve Carrington & Mai Nguyen
+//assistance from Chris Jones outside of Kenzie on how to have the block stop at every wall
+
+
+
 const map = [
     "WWWWWWWWWWWWWWWWWWWWW",
     "W   W     W     W W W",
@@ -35,9 +40,16 @@ const createMaze = function (blueprint) {
 
                 gloRowNum = rowNum;
                 gloColNum = colNum;
+                } else if (blockType === "F"){
+                //     alert("You Win!")
+                //     div_blocks += `<div class="finish"></div>`;
+                div_blocks += `<div class="block finish" data-column="${colNum}" data-row="${rowNum}"></div>`;
             } else {
-                div_blocks += `<div class="block" data-column="${colNum}" data-row="${rowNum}"></div>`;
+                div_blocks += `<div class="block" id="player" data-column="${colNum}" data-row="${rowNum}"></div>`;
             }
+            // if (blockType === "F") {
+            //     document.getElementById("player").appendChild(box)
+            // }
         }
         maze_element.innerHTML += `<div class="row">${div_blocks}</div>`;
     }
@@ -59,6 +71,10 @@ const createMaze = function (blueprint) {
 
             gloColNum = colNum;
             gloRowNum = rowNum;
+        }
+        if (block.classList.contains("finish") ) {
+            document.getElementById("win").innerHTML = "You Win!"
+            setTimeout("location.reload(true);", 3000)
         }
     }
 
@@ -89,5 +105,7 @@ const createMaze = function (blueprint) {
         canMove(colNum, rowNum)
     }
 
+
 }
 createMaze(map);
+
