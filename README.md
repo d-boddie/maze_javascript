@@ -1,4 +1,4 @@
-Maze link [https://d_boddie.gitlab.io/maze ]
+Maze link [https://d_boddie.github.io/maze ]
 
 
 Maze
@@ -56,9 +56,3 @@ to {margin-left: 0;}
 
 You may find that you need to remove the class associated with the previous animation before you can add it back and get it to run again. You may find it helpful to use window.setTimeout to specify a function to remove the animation classes (after allowing enough of a timeout for the animation to complete).
 
-*Submission
-Push your code into your GitLab repository and deploy it via GitLab pages.
-Once you have the GitLab Pages url (ex: https://username.gitlab.io/maze/), go back to your code to create a README.md file, and put the GitLab Pages url and your thought process/development plan as the contents.
-Push your code to your GitLab repo once more.
-In Canvas, please submit your Gitlab Repo url.
-In GitLab, add KA_Grading as a member on your project with "Reporter" permission.
